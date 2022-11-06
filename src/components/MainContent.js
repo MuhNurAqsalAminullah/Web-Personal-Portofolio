@@ -11,8 +11,8 @@ const MainContent = () => {
             <div className='sm:px-5 sm:pb-28 md:px-[100px] lg:px-[200px]'>
                 <h5 className='sm:text-sm  sm:mb-5 md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>Halo, perkenalkan nama saya</h5>
                 <h1 className='sm:text-2xl sm:mb-5 md:text-4xl lg:text-6xl text-[#CED8FF] font-bold font-["Roboto Condensed"]'>Muh Nur Aqsal Aminullah</h1>
-                <h1 className='sm:text-2xl sm:mb-5 md:text-4xl lg:text-6xl text-[#AEAEAE] font-bold font-["Roboto Condensed"]'>Saya seorang frontend web developer.</h1>
-                <p className='sm:text-xs sm:mb-5 md:text-sm lg:text-base md:w-[80%] lg:w-[50%] text-[#A8A8A8]'>Saya adalah seorang web programmer yang mengfokuskan sebuah keahlian dibidang frontend web developer terutama dalam hal pembuatan tampilan user interface sebuah website. Oleh karena itu saya menyukai mengimplementasikan sebuah desain web UI agar menjadi sebuah website.</p>
+                <h1 className='sm:text-2xl sm:mb-5 md:text-4xl lg:text-6xl text-[#AEAEAE] font-bold font-["Roboto Condensed"]'>Saya seorang frontend developer.</h1>
+                <p className='sm:text-xs sm:mb-5 md:text-sm lg:text-base md:w-[80%] lg:w-[50%] text-[#A8A8A8]'>Saya adalah seorang web programmer yang mengfokuskan sebuah keahlian dibidang frontend developer terutama dalam hal pembuatan tampilan user interface sebuah website. Oleh karena itu saya menyukai mengimplementasikan sebuah desain web UI agar menjadi sebuah website.</p>
                 <a href='CV Muh Nur Aqsal Aminullah.pdf' download={"CV Muh Nur Aqsal Aminullah.pdf"}>
                     <button className='sm:text-xs sm:mt-5 sm:px-4 sm:py-2 md:text-sm lg:text-base rounded text-[#0EE6B7] border border-[#0EE6B7]'>Lihat cv saya</button>
                 </a>
@@ -137,25 +137,25 @@ const MainContent = () => {
 
                     <div className='lg:flex'>
                         <div className='md:flex md:justify-center lg:justify-start lg:w-[60%]'>
-                            <img src={require('../assets/image/projek2.jpg')} className='rounded' alt="" />
+                            <img src={require('../assets/image/porto3.jpg')} className='rounded' alt="" />
                         </div>
                         <div className='sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-end'>
                             <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>Build web app</h5>
-                            <h4 className='sm:text-lg sm:mb-1 md:text-xl lg:text-2xl text-[#CED8FF] font-bold'>RestoNyams</h4>
-                            <p className='sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]'>RestoNyams adalah sebuah web aplikasi yang menampilakan sebuah informasi sebuah restoran dan pada aplikasi ini hanya menggunakan fake data kerena web ini hanya sebagai bentuk latihan saya untuk membuat website. Pada website ini saya menggunakan ReactJs dan juga Tailwindcss dalam pembuatannya.</p>
+                            <h4 className='sm:text-lg sm:mb-1 md:text-xl lg:text-2xl text-[#CED8FF] font-bold'>To Do List</h4>
+                            <p className='sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]'>To do list adalah sebuah web aplikasi yang saya buat untuk belajar membuat web CRUD sebagai bahan latihan cara melakukan create, read, update dan delete sebuah data menggunakan fake data. pada website ini saya menggunakan React dan juga Tailwindcss dalam pembuatannya.</p>
                             <ul className='flex gap-x-3 sm:mb-2 lg:justify-end'>
                             <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'><a href="https://reactjs.org/" target={"_blank"}>ReactJs</a></li>
                                 <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'><a href='https://tailwindcss.com/' target={"_blank"}>Tailwind</a></li>
                             </ul>
                             <div className='sm:flex lg:hidden md:justify-end gap-x-3'>
-                                <a href="https://github.com/MuhNurAqsalAminullah/RestoNyams-personal" target={"_blank"}>
+                                <a href="https://github.com/MuhNurAqsalAminullah/crud-todolist" target={"_blank"}>
                                     {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
                                     <VscIcons.VscGithub />
                                 </a>
                                 {/* <FiIcons.FiExternalLink /> */}
                             </div>
                             <div className='sm:hidden lg:flex md:justify-end gap-x-3'>
-                                <a href="https://github.com/MuhNurAqsalAminullah/RestoNyams-personal" target={"_blank"}>
+                                <a href="https://github.com/MuhNurAqsalAminullah/crud-todolist" target={"_blank"}>
                                     <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' />
                                 </a>
                                 {/* <FiIcons.FiExternalLink size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
