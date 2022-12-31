@@ -1,0 +1,41 @@
+{
+    "Header": {
+        "1": "Portofolio"
+    },
+    "Hello": {
+        "1": "Halo, perkenalkan nama saya",
+        "2": "Saya seorang frontend developer",
+        "3": "Saya adalah seorang web programmer yang mengfokuskan sebuah keahlian dibidang frontend developer terutama dalam hal pembuatan tampilan user interface sebuah website. Oleh karena itu saya menyukai mengimplementasikan sebuah desain web UI agar menjadi sebuah website.",
+        "4": "Unduh cv saya"
+    },
+    "About": {
+        "1": "Tentang saya",
+        "2": "Halo!, perkenalkan nama saya Muh Nur Aqsal Aminullah, S.Kom, seorang lulusan program studi Informatika dari Universitas Muhammadiyah Makassar pada tahun 2022. Saya seorang yang pekerja keras, disiplin serta selalu fokus dalam melakukan sebuah pekerjaan dan juga mampu bekerja dalam sebuah tim.",
+        "3": "Berikut ini adalah teknologi - teknologi yang saya gunakan untuk melakukan pekerjaan saya sebagai frontend developer untuk membangun sebuah website:"
+    },
+    "Project": {
+        "1": "Proyek",
+        "1_1": "Membangun aplikasi web",
+        "1_2": "Berich Premium adalah sebuah web aplikasi yang berjenis MLM (Multi Level Marketing) yang di mana adalah sebuah aplikasi yang dapat membantu sebuah bisnis untuk mengatasi komplesitas pemasaran multi level dalam waktu singkat. Pembuatan web aplikasi Berich Premium yang saya kerjakan pada sisi frontendnya menggunakan ReactJs, Tailwindcss dalam pembuatanya dan sedikit menggunkanan Material UI Core untuk beberapa component didalamnya.",
+        "2_1": "Membangun website landing page",
+        "2_2": "ZonaEnglish adalah sebuah web landing page yang bertemakan pendidikan dengan memberikan sebuah informasikan sebuah aplikasi untuk kursus belajar berbahasa inggris dengan mengenalkan fitur-fitur yang tersedia pada aplikasi tersebut beberapa informasi lainya. Pembuatan Web Landing page yang saya kerjakan pada sisi frontend-nya menggunakan ReactJs dan hanya menggunakan Css biasa tanpa menggunakan framework Css.",
+        "3_1": "Membangun aplikasi web",
+        "3_2": "Membuat sebuah Website yang dapat melakukan CRUD ( Create, Read, Update, dan Delete ) pada data yang telah ditentukan dengan mengintegrasikan sebuah API dan dapat melakukan login untuk dapat mengakses data yang ada didalamnya dengan menggunakan sistem Token API Autentikasi. Pada Website ini saya menggunkan React dan juga Tailwindcss dalam pembuatannya.",
+        "4": "Lihat Semua",
+        "5": "Lihat semua portofolio saya yang terdapat pada Github"
+    },
+    "Contact": {
+        "1": "Kontak",
+        "2": "Saya aktif di beberapa media sosial untuk berkomunikasi, jika anda memiliki sebuah keperluan atau ingin menyapa.",
+        "3": "Anda bisa menghubungi media sosial atau form yang telah disediakan.",
+        "4": "Nama",
+        "5": "Masukkan email",
+        "6": "Pesan anda",
+        "7": "Kirim"
+    },
+    "Footer": {
+        "1": "Dibuat oleh",
+        "2": "menggunakan",
+        "3": "dan"
+    }
+}

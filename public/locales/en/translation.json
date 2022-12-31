@@ -1,0 +1,41 @@
+{
+    "Header": {
+        "1": "Portfolio"
+    },
+    "Hello": {
+        "1": "Hello, my name is",
+        "2": "I am a frontend developer",
+        "3": "I am a web programmer who focuses on expertise in the field of frontend developers, especially in terms of making the user interface of a website. Therefore I like implementing a web UI design to become a website.",
+        "4": "Download my cv"
+    },
+    "About": {
+        "1": "About me",
+        "2": "Hello!, introduce my name is Muh Nur Aqsal Aminullah, S.Kom, a graduate of the Informatics study program from Muhammadiyah Makassar University in 2022. I am a hard worker, disciplined and always focused on doing a job and also able to work in a team.",
+        "3": "The following are the skills and technologies that I use to do my work as a frontend developer to build a website:"
+    },
+    "Project": {
+        "1": "Project",
+        "1_1": "Build web app",
+        "1_2": "Berich Premium is a web application of the MLM (Multi Level Marketing) type which is an application that can help a business to overcome the complexities of multi-level marketing in a short time. The making of the Berich Premium web application that I worked on on the frontend side used ReactJs, Tailwindcss in its manufacture and used Material UI Core a little for some of the components in it.",
+        "2_1": "Build web landing page",
+        "2_2": "ZonaEnglish is a web landing page with the theme of education by providing information on an application for English learning courses by introducing the features available in the application and some other information. The Web Landing page that I worked on on the frontend side used ReactJs and only used regular Css without using the Css framework.",
+        "3_1": "Build web app",
+        "3_2": "Create a Website that can do CRUD ( Create, Read, Update, and Delete ) on predetermined data by integrating an API and can log in to be able to access the data contained in it by using the Authentication API Token system. On this website I use React and also Tailwindcss in making it.",
+        "4": "View all",
+        "5": "See all of my portfolio on Github"
+    },
+    "Contact": {
+        "1": "Contact",
+        "2": "I'm active on several social media to communicate, if you have a need or want to say hi.",
+        "3": "You can contact social media or the form provided.",
+        "4": "Name",
+        "5": "Enter email",
+        "6": "Your message",
+        "7": "Send"
+    },
+    "Footer": {
+        "1": "Made by",
+        "2": "use",
+        "3": "and"
+    }
+}

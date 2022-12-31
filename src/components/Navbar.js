@@ -3,7 +3,7 @@ import { useState } from "react";
 import * as GiIcons from "react-icons/gi";
 import * as VscIcons from "react-icons/vsc";
 
-const Navbar = () => {
+const Navbar = ({ t, clickLanguage }) => {
   const [burger, setBurger] = useState(false);
   const [fixScroll, setFixScroll] = useState(false);
 
@@ -31,8 +31,8 @@ const Navbar = () => {
       <div className="sm:flex sm:items-center sm:justify-between sm:px-5 sm:py-4 sm:text-white md:px-[50px] lg:[100px]">
         <div>
           <a href="#">
-            <h3 className="sm:text-lg sm:font-semibold md:text-2xl lg:text-3xl">
-              Muh Nur Aqsal Aminullah
+            <h3 className="sm:text-lg sm:font-semibold md:text-2xl lg:text-3xl tracking-widest">
+              {t("Header.1")}
             </h3>
           </a>
         </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
               href="#about"
               className='font-["Inconsolata"] hover:text-[#0EE6B7]'
             >
-              Tentang Saya
+              {t("About.1")}
             </a>
           </li>
           <li className="sm:border-b sm:border-white sm:py-2 sm:flex sm:items-center sm:gap-x-2 md:border-0 md:py-0 sm:text-xs md:text-sm lg:text-base">
@@ -59,7 +59,7 @@ const Navbar = () => {
               href="#project"
               className='font-["Inconsolata"] hover:text-[#0EE6B7]'
             >
-              Project
+              {t("Project.1")}
             </a>
           </li>
           <li className="sm:border-b sm:border-white sm:py-2 sm:flex sm:items-center sm:gap-x-2 md:border-0 md:py-0 sm:text-xs md:text-sm lg:text-base">
@@ -68,9 +68,34 @@ const Navbar = () => {
               href="#kontak"
               className='font-["Inconsolata"] hover:text-[#0EE6B7]'
             >
-              Kontak
+              {t("Contact.1")}
             </a>
           </li>
+          <li className="sm:border-b sm:border-white sm:py-2 sm:flex sm:items-center sm:gap-x-2 md:border-0 md:py-0 sm:text-xs md:text-sm lg:text-base cursor-pointer">
+            <VscIcons.VscTriangleRight color="#0EE6B7" />
+            <p
+              onClick={() => clickLanguage("en")}
+              className='font-["Inconsolata"] hover:text-[#0EE6B7]'
+            >
+              EN
+            </p>
+            <span>/</span>
+            <p
+              onClick={() => clickLanguage("id")}
+              className='font-["Inconsolata"] hover:text-[#0EE6B7]'
+            >
+              ID
+            </p>
+          </li>
+          {/* <li className="sm:border-b sm:border-white sm:py-2 sm:flex sm:items-center sm:gap-x-2 md:border-0 md:py-0 sm:text-xs md:text-sm lg:text-base">
+            <VscIcons.VscTriangleRight color="#0EE6B7" />
+            <p
+              onClick={() => clickLanguage("id")}
+              className='font-["Inconsolata"] hover:text-[#0EE6B7]'
+            >
+              ID
+            </p>
+          </li> */}
         </ul>
 
         <GiIcons.GiHamburgerMenu
