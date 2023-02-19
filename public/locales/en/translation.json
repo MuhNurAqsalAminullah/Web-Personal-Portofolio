@@ -21,6 +21,10 @@
         "2_2": "ZonaEnglish is a web landing page with the theme of education by providing information on an application for English learning courses by introducing the features available in the application and some other information. The Web Landing page that I worked on on the frontend side used ReactJs and only used regular Css without using the Css framework.",
         "3_1": "Build web app",
         "3_2": "Create a Website that can do CRUD ( Create, Read, Update, and Delete ) on predetermined data by integrating an API and can log in to be able to access the data contained in it by using the Authentication API Token system. On this website I use React and also Tailwindcss in making it.",
+        "4_1": "Build web dashboard app",
+        "4_2": "Warehousing Dashboard is a website application for processing a product in a warehouse, but for now it only does UI slicing on the side of the display so that it takes the form of a web application. Slicing Making this web application uses ReactJs and also Tailwindcss in its manufacture and will be developed in the future.",
+        "5_1": "Build web app",
+        "5_2": "This project is a final submission that is given Dicoding in the learning module entitled 'Becoming a Frontend Web Developer Expert' in order to pass the class. In this project, I used Javascript Css and Webpack to help process the process of making bundle files from a collection of source code.",
         "4": "View all",
         "5": "See all of my portfolio on Github"
     },

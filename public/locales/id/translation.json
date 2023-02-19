@@ -21,6 +21,10 @@
         "2_2": "ZonaEnglish adalah sebuah web landing page yang bertemakan pendidikan dengan memberikan sebuah informasikan sebuah aplikasi untuk kursus belajar berbahasa inggris dengan mengenalkan fitur-fitur yang tersedia pada aplikasi tersebut beberapa informasi lainya. Pembuatan Web Landing page yang saya kerjakan pada sisi frontend-nya menggunakan ReactJs dan hanya menggunakan Css biasa tanpa menggunakan framework Css.",
         "3_1": "Membangun aplikasi web",
         "3_2": "Membuat sebuah Website yang dapat melakukan CRUD ( Create, Read, Update, dan Delete ) pada data yang telah ditentukan dengan mengintegrasikan sebuah API dan dapat melakukan login untuk dapat mengakses data yang ada didalamnya dengan menggunakan sistem Token API Autentikasi. Pada Website ini saya menggunkan React dan juga Tailwindcss dalam pembuatannya.",
+        "4_1": "Membangun aplikasi web dashboard",
+        "4_2": "Warehousing Dashboard adah sebuah aplikasi website untuk mengolah sebuah barang barang produk dalam sebuah pergudangan, tapi untuk saat ini hanya melakukan slicing ui di sisi tampilan agar berbentuk menjadi web aplikasi. Slicing Pembuatan web aplikasi ini menggunakan ReactJs dan juga Tailwindcss dalam pembuatannya dan akan di kembangkan kedepannya.",
+        "5_1": "Membangun aplikasi web",
+        "5_2": "Projek ini adalah sebuah submission final yang di berikan olah dicoding dalam modul pembelajarannya yang berjudul 'Menjadi Frontend Web Developer Expert' agar dapat lulus di kelas tersebut. Pada Projek ini dalam pembuatannya saya menggunkan Javascrit Css dan Webpack untuk membantu mengolah proses pembuatan file bundel dari kumpulan source code.",
         "4": "Lihat Semua",
         "5": "Lihat semua portofolio saya yang terdapat pada Github"
     },

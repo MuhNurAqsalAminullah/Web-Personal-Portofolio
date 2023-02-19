@@ -150,13 +150,48 @@ const MainContent = ({ t }) => {
         <div className="sm:mt-10">
           <div className="lg:flex sm:mb-14 lg:mb-32">
             <div className="md:flex md:justify-center lg:justify-start lg:w-[60%]">
-              <img
+              <Swiper
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                pagination={true}
+                modules={[Pagination, Autoplay]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/birich1.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/birich2.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/birich3.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/birich4.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+              </Swiper>
+              {/* <img
                 src={require("../assets/image/projek1.jpg")}
                 className="rounded"
                 alt=""
-              />
+              /> */}
             </div>
-            <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-end">
+            <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-end z-10">
               <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.1_1")}
               </h5>
@@ -212,28 +247,28 @@ const MainContent = ({ t }) => {
               >
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/zonaEnglish1.png")}
+                    src={require("../assets/image/zonaEnglish1.jpg")}
                     className="rounded"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/zonaEnglish2.png")}
+                    src={require("../assets/image/zonaEnglish2.jpg")}
                     className="rounded"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/zonaEnglish3.png")}
+                    src={require("../assets/image/zonaEnglish3.jpg")}
                     className="rounded"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/zonaEnglish4.png")}
+                    src={require("../assets/image/zonaEnglish4.jpg")}
                     className="rounded"
                     alt=""
                   />
@@ -295,7 +330,7 @@ const MainContent = ({ t }) => {
             </div>
           </div>
 
-          <div className="lg:flex">
+          <div className="lg:flex sm:mb-14 lg:mb-32">
             <div className="md:flex md:justify-center lg:justify-start lg:w-[60%]">
               <Swiper
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -305,21 +340,28 @@ const MainContent = ({ t }) => {
               >
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/login page.png")}
+                    src={require("../assets/image/work1.jpg")}
                     className="rounded"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/position list.png")}
+                    src={require("../assets/image/work2.jpg")}
                     className="rounded"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/employees list.png")}
+                    src={require("../assets/image/work3.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/work4.jpg")}
                     className="rounded"
                     alt=""
                   />
@@ -388,6 +430,174 @@ const MainContent = ({ t }) => {
               </div>
             </div>
           </div>
+
+          <div className="lg:flex lg:flex-row-reverse sm:mb-14 lg:mb-32">
+            <div className="md:flex md:justify-center lg:justify-end lg:w-[60%]">
+              <Swiper
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                pagination={true}
+                modules={[Pagination, Autoplay]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/dash1.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/dash2.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/dash3.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+            <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-start z-10">
+              <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
+                {t("Project.4_1")}
+              </h5>
+              <h4 className="sm:text-lg sm:mb-1 md:text-xl lg:text-2xl text-[#CED8FF] font-bold">
+                Warehousing Dashboard
+              </h4>
+              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
+                {t("Project.4_2")}
+              </p>
+              <ul className="flex gap-x-3 sm:mb-2 lg:justify-end">
+                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a href="href='https://reactjs.org/" target={"_blank"}>
+                    ReactJs
+                  </a>
+                </li>
+                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a href="https://tailwindcss.com/" target={"_blank"}>
+                    Tailwind
+                  </a>
+                </li>
+              </ul>
+              <div className="sm:flex lg:hidden md:justify-end gap-x-3">
+                <a
+                  href="https://github.com/MuhNurAqsalAminullah/Warehousing-Dashboard"
+                  target={"_blank"}
+                >
+                  {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
+                  <VscIcons.VscGithub />
+                </a>
+                <a href="https://www.zonaenglish.id/" target={"_blank"}>
+                  <FiIcons.FiExternalLink />
+                  {/* <FiIcons.FiExternalLink size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
+                </a>
+              </div>
+              <div className="sm:hidden lg:flex md:justify-end gap-x-3">
+                <a
+                  href="https://github.com/MuhNurAqsalAminullah/Warehousing-Dashboard"
+                  target={"_blank"}
+                >
+                  <VscIcons.VscGithub
+                    size={25}
+                    className="cursor-pointer hover:text-[#0EE6B7]"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:flex sm:mb-14 lg:mb-32">
+            <div className="md:flex md:justify-center lg:justify-start lg:w-[60%]">
+              <Swiper
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                pagination={true}
+                modules={[Pagination, Autoplay]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/dicoding1.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={require("../assets/image/dicoding2.jpg")}
+                    className="rounded"
+                    alt=""
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+            <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-end z-10">
+              <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
+                {t("Project.5_1")}
+              </h5>
+              <h4 className="sm:text-lg sm:mb-1 md:text-xl lg:text-2xl lg:text-end text-[#CED8FF] font-bold">
+                Final Submission Dicoding Frontend Expert
+              </h4>
+              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
+                {t("Project.5_2")}
+              </p>
+              <ul className="flex gap-x-3 sm:mb-2 lg:justify-end">
+                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a href="https://www.javascript.com/" target={"_blank"}>
+                    Javascript
+                  </a>
+                </li>
+                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a href="https://www.w3schools.com/css/" target={"_blank"}>
+                    Css
+                  </a>
+                </li>
+                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a
+                    href="https://webpack.js.org/"
+                    target={"_blank"}
+                  >
+                    Webpack
+                  </a>
+                </li>
+                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a
+                    href="https://www.niagahoster.co.id/blog/api-adalah/"
+                    target={"_blank"}
+                  >
+                    API
+                  </a>
+                </li>
+              </ul>
+              <div className="sm:flex lg:hidden md:justify-end gap-x-3">
+                <a
+                  href="https://github.com/MuhNurAqsalAminullah/Submission-Dicoding-Menjadi-Front-End-Web-Developer-Expert"
+                  target={"_blank"}
+                >
+                  {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
+                  <VscIcons.VscGithub />
+                </a>
+                {/* <FiIcons.FiExternalLink /> */}
+              </div>
+              <div className="sm:hidden lg:flex md:justify-end gap-x-3">
+                <a
+                  href="https://github.com/MuhNurAqsalAminullah/Submission-Dicoding-Menjadi-Front-End-Web-Developer-Expert"
+                  target={"_blank"}
+                >
+                  <VscIcons.VscGithub
+                    size={25}
+                    className="cursor-pointer hover:text-[#0EE6B7]"
+                  />
+                </a>
+                {/* <FiIcons.FiExternalLink size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
+              </div>
+            </div>
+          </div>
+
         </div>
         <div className="flex flex-col items-center mt-20">
           <button className="border border-[#0EE6B7] rounded px-8 py-2 mb-3 hover:bg-[#0EE6B7] hover:text-[#131A35]">
