@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import * as VscIcons from "react-icons/vsc";
 import * as FiIcons from "react-icons/fi";
 import * as AiIcons from "react-icons/ai";
@@ -10,6 +11,22 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 
 const MainContent = ({ t }) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_qe6fcma', 'template_aurlpoa', form.current, 'iePxYksHGILoE-9jD')
+      .then((result) => {
+        console.log(result.text);
+        console.log("Successfully sent email");
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
+  };
+
+
   return (
     <main className="sm:pt-24 md:pt-28">
       <div className="sm:px-5 sm:pb-28 md:px-[100px] lg:px-[200px]">
@@ -119,6 +136,18 @@ const MainContent = ({ t }) => {
                       Tailwindcss
                     </a>
                   </li>
+                  <li className="flex items-center gap-x-3 mb-3">
+                    <VscIcons.VscTriangleRight color="#0EE6B7" />
+                    <a
+                      href="https://getbootstrap.com/"
+                      target={"_blank"}
+                      className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                    >
+                      Bootstrap
+                    </a>
+                  </li>
+                </ul>
+                <ul>
                   <li className="flex items-center gap-x-3 mb-3">
                     <VscIcons.VscTriangleRight color="#0EE6B7" />
                     <a
@@ -633,7 +662,7 @@ const MainContent = ({ t }) => {
                 {t("Contact.2")} <br />
                 <br /> {t("Contact.3")}
               </p>
-              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:pr-3 text-[#A8A8A8]">
+              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:pr-3 text-[#0EE6B7]">
                 Gmail : muhnuraqsalaminullah@gmail.com
               </p>
               <div className="flex gap-x-3">
@@ -670,22 +699,22 @@ const MainContent = ({ t }) => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col sm:mt-10 lg:w-1/2 lg:mt-0">
+
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col sm:mt-10 lg:w-1/2 lg:mt-0">
               <input
-                disabled
+                name="to_name"
                 type="text"
                 placeholder={t("Contact.4")}
                 className="sm:text-xs sm:mb-2 md:text-sm lg:text-base rounded pl-2 py-2 bg-black/[.3] outline-none"
               />
               <input
-                disabled
+                name="reply_to"
                 type="text"
                 placeholder={t("Contact.5")}
                 className="sm:text-xs sm:mb-2 md:text-sm lg:text-base rounded pl-2 py-2 bg-black/[.3] outline-none"
               />
               <textarea
-                disabled
-                name=""
+                name="message"
                 id=""
                 cols="30"
                 rows="10"
@@ -693,11 +722,12 @@ const MainContent = ({ t }) => {
                 className="sm:text-xs md:text-sm lg:text-base bg-black/[.3] outline-none pl-2 py-3"
               ></textarea>
               <div className="flex justify-end">
-                <button className="sm:text-xs sm:mt-5 sm:px-10 sm:py-2 md:text-sm lg:text-base rounded text-[#0EE6B7] border border-[#0EE6B7]">
+                <button type="submit" value="Send" className="sm:text-xs sm:mt-5 sm:px-10 sm:py-2 md:text-sm lg:text-base rounded text-[#0EE6B7] border border-[#0EE6B7]">
                   {t("Contact.7")}
                 </button>
               </div>
-            </div>
+            </form>
+
           </div>
         </div>
       </div>
