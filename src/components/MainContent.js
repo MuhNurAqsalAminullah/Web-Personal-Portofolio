@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import * as VscIcons from "react-icons/vsc";
 import * as FiIcons from "react-icons/fi";
 import * as AiIcons from "react-icons/ai";
@@ -16,16 +16,24 @@ const MainContent = ({ t }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_qe6fcma', 'template_aurlpoa', form.current, 'iePxYksHGILoE-9jD')
-      .then((result) => {
-        console.log(result.text);
-        console.log("Successfully sent email");
-      }, (error) => {
-        console.log(error.text);
-      });
+    emailjs
+      .sendForm(
+        "service_qe6fcma",
+        "template_aurlpoa",
+        form.current,
+        "iePxYksHGILoE-9jD"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Successfully sent email");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     e.target.reset();
   };
-
 
   return (
     <main className="sm:pt-24 md:pt-28">
@@ -369,28 +377,21 @@ const MainContent = ({ t }) => {
               >
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/work1.jpg")}
+                    src={require("../assets/image/notes1.jpg")}
                     className="rounded"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/work2.jpg")}
+                    src={require("../assets/image/notes2.jpg")}
                     className="rounded"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src={require("../assets/image/work3.jpg")}
-                    className="rounded"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src={require("../assets/image/work4.jpg")}
+                    src={require("../assets/image/notes3.jpg")}
                     className="rounded"
                     alt=""
                   />
@@ -402,7 +403,7 @@ const MainContent = ({ t }) => {
                 {t("Project.3_1")}
               </h5>
               <h4 className="sm:text-lg sm:mb-1 md:text-xl lg:text-2xl text-[#CED8FF] font-bold">
-                Frontend CRUD Integrate API
+                Notes App CRUD Integrate API
               </h4>
               <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
                 {t("Project.3_2")}
@@ -414,8 +415,8 @@ const MainContent = ({ t }) => {
                   </a>
                 </li>
                 <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
-                  <a href="https://tailwindcss.com/" target={"_blank"}>
-                    Tailwind
+                  <a href="https://redux-toolkit.js.org/" target={"_blank"}>
+                    Redux Toolkit
                   </a>
                 </li>
                 <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
@@ -437,7 +438,7 @@ const MainContent = ({ t }) => {
               </ul>
               <div className="sm:flex lg:hidden md:justify-end gap-x-3">
                 <a
-                  href="https://github.com/MuhNurAqsalAminullah/crud-todolist"
+                  href="https://github.com/MuhNurAqsalAminullah/app-notes"
                   target={"_blank"}
                 >
                   {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
@@ -447,10 +448,19 @@ const MainContent = ({ t }) => {
               </div>
               <div className="sm:hidden lg:flex md:justify-end gap-x-3">
                 <a
-                  href="https://github.com/MuhNurAqsalAminullah/crud-todolist"
+                  href="https://github.com/MuhNurAqsalAminullah/app-notes"
                   target={"_blank"}
                 >
                   <VscIcons.VscGithub
+                    size={25}
+                    className="cursor-pointer hover:text-[#0EE6B7]"
+                  />
+                </a>
+                <a
+                  href="https://notes-app-steel-alpha.vercel.app/"
+                  target={"_blank"}
+                >
+                  <FiIcons.FiExternalLink
                     size={25}
                     className="cursor-pointer hover:text-[#0EE6B7]"
                   />
@@ -586,10 +596,7 @@ const MainContent = ({ t }) => {
                   </a>
                 </li>
                 <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
-                  <a
-                    href="https://webpack.js.org/"
-                    target={"_blank"}
-                  >
+                  <a href="https://webpack.js.org/" target={"_blank"}>
                     Webpack
                   </a>
                 </li>
@@ -626,7 +633,6 @@ const MainContent = ({ t }) => {
               </div>
             </div>
           </div>
-
         </div>
         <div className="flex flex-col items-center mt-20">
           <button className="border border-[#0EE6B7] rounded px-8 py-2 mb-3 hover:bg-[#0EE6B7] hover:text-[#131A35]">
@@ -700,7 +706,11 @@ const MainContent = ({ t }) => {
               </div>
             </div>
 
-            <form ref={form} onSubmit={sendEmail} className="flex flex-col sm:mt-10 lg:w-1/2 lg:mt-0">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="flex flex-col sm:mt-10 lg:w-1/2 lg:mt-0"
+            >
               <input
                 name="to_name"
                 type="text"
@@ -722,12 +732,15 @@ const MainContent = ({ t }) => {
                 className="sm:text-xs md:text-sm lg:text-base bg-black/[.3] outline-none pl-2 py-3"
               ></textarea>
               <div className="flex justify-end">
-                <button type="submit" value="Send" className="sm:text-xs sm:mt-5 sm:px-10 sm:py-2 md:text-sm lg:text-base rounded text-[#0EE6B7] border border-[#0EE6B7]">
+                <button
+                  type="submit"
+                  value="Send"
+                  className="sm:text-xs sm:mt-5 sm:px-10 sm:py-2 md:text-sm lg:text-base rounded text-[#0EE6B7] border border-[#0EE6B7]"
+                >
                   {t("Contact.7")}
                 </button>
               </div>
             </form>
-
           </div>
         </div>
       </div>
