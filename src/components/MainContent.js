@@ -74,9 +74,9 @@ const MainContent = ({ t }) => {
         <div className="sm:mt-5">
           <div className="lg:flex lg:flex-row-reverse lg:justify-between">
             <div className="sm:flex sm:justify-center lg:justify-end lg:w[30%]">
-              <div className="sm:relative sm:mt-5 lg:mt-0">
+              <div className="sm:relative sm:mt-5 lg:mt-0 rounded-lg overflow-hidden">
                 <img
-                  src={require("../assets/image/aqsalini.jpg")}
+                  src={require("../assets/image/profile.jpg")}
                   className="sm:w-[150px] lg:w-[300px]"
                   alt=""
                 />
@@ -185,6 +185,7 @@ const MainContent = ({ t }) => {
           <div className="border-t border-white sm:w-[100px]"></div>
         </div>
         <div className="sm:mt-10">
+          {/* Projek 1 */}
           <div className="lg:flex sm:mb-14 lg:mb-32">
             <div className="md:flex md:justify-center lg:justify-start lg:w-[60%]">
               <Swiper
@@ -274,6 +275,7 @@ const MainContent = ({ t }) => {
             </div>
           </div>
 
+          {/* Projek 2 */}
           <div className="lg:flex lg:flex-row-reverse sm:mb-14 lg:mb-32">
             <div className="md:flex md:justify-center lg:justify-end lg:w-[60%]">
               <Swiper
@@ -312,6 +314,7 @@ const MainContent = ({ t }) => {
                 </SwiperSlide>
               </Swiper>
             </div>
+
             <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-start z-10">
               <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.2_1")}
@@ -367,6 +370,7 @@ const MainContent = ({ t }) => {
             </div>
           </div>
 
+          {/* Projek 3 */}
           <div className="lg:flex sm:mb-14 lg:mb-32">
             <div className="md:flex md:justify-center lg:justify-start lg:w-[60%]">
               <Swiper
@@ -398,6 +402,7 @@ const MainContent = ({ t }) => {
                 </SwiperSlide>
               </Swiper>
             </div>
+
             <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-end z-10">
               <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.3_1")}
@@ -444,6 +449,14 @@ const MainContent = ({ t }) => {
                   {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
                   <VscIcons.VscGithub />
                 </a>
+                <a
+                  href="https://notes-app-steel-alpha.vercel.app/"
+                  target={"_blank"}
+                >
+                  <FiIcons.FiExternalLink
+                    className="cursor-pointer hover:text-[#0EE6B7]"
+                  />
+                </a>
                 {/* <FiIcons.FiExternalLink /> */}
               </div>
               <div className="sm:hidden lg:flex md:justify-end gap-x-3">
@@ -470,6 +483,7 @@ const MainContent = ({ t }) => {
             </div>
           </div>
 
+          {/* Projek 4 */}
           <div className="lg:flex lg:flex-row-reverse sm:mb-14 lg:mb-32">
             <div className="md:flex md:justify-center lg:justify-end lg:w-[60%]">
               <Swiper
@@ -501,6 +515,7 @@ const MainContent = ({ t }) => {
                 </SwiperSlide>
               </Swiper>
             </div>
+
             <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-start z-10">
               <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.4_1")}
@@ -518,6 +533,11 @@ const MainContent = ({ t }) => {
                   </a>
                 </li>
                 <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a href="https://redux-toolkit.js.org/" target={"_blank"}>
+                    Redux Toolkit
+                  </a>
+                </li>
+                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://tailwindcss.com/" target={"_blank"}>
                     Tailwind
                   </a>
@@ -531,25 +551,41 @@ const MainContent = ({ t }) => {
                   {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
                   <VscIcons.VscGithub />
                 </a>
-                <a href="https://www.zonaenglish.id/" target={"_blank"}>
-                  <FiIcons.FiExternalLink />
-                  {/* <FiIcons.FiExternalLink size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
-                </a>
               </div>
               <div className="sm:hidden lg:flex md:justify-end gap-x-3">
                 <a
                   href="https://github.com/MuhNurAqsalAminullah/Warehousing-Dashboard"
                   target={"_blank"}
+                  className="flex gap-x-1 cursor-pointer hover:text-[#0EE6B7]"
                 >
+                  [
+                  <p>
+                    FE
+                  </p>
                   <VscIcons.VscGithub
                     size={25}
-                    className="cursor-pointer hover:text-[#0EE6B7]"
                   />
+                  ]
+                </a>
+                <a
+                  href="https://github.com/MuhNurAqsalAminullah/Backend-Warehousing-Dashboard"
+                  target={"_blank"}
+                  className="flex gap-x-1 cursor-pointer hover:text-[#0EE6B7]"
+                >
+                  [
+                  <p>
+                    BE
+                  </p>
+                  <VscIcons.VscGithub
+                    size={25}
+                  />
+                  ]
                 </a>
               </div>
             </div>
           </div>
 
+          {/* Projek 5 */}
           <div className="lg:flex sm:mb-14 lg:mb-32">
             <div className="md:flex md:justify-center lg:justify-start lg:w-[60%]">
               <Swiper
@@ -574,6 +610,7 @@ const MainContent = ({ t }) => {
                 </SwiperSlide>
               </Swiper>
             </div>
+
             <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-end z-10">
               <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.5_1")}
@@ -617,6 +654,14 @@ const MainContent = ({ t }) => {
                   {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
                   <VscIcons.VscGithub />
                 </a>
+                <a
+                  href="https://restonyam.netlify.app/"
+                  target={"_blank"}
+                >
+                  <FiIcons.FiExternalLink
+                    className="cursor-pointer hover:text-[#0EE6B7]"
+                  />
+                </a>
                 {/* <FiIcons.FiExternalLink /> */}
               </div>
               <div className="sm:hidden lg:flex md:justify-end gap-x-3">
@@ -629,11 +674,22 @@ const MainContent = ({ t }) => {
                     className="cursor-pointer hover:text-[#0EE6B7]"
                   />
                 </a>
+                <a
+                  href="https://restonyam.netlify.app/"
+                  target={"_blank"}
+                >
+                  <FiIcons.FiExternalLink
+                    size={25}
+                    className="cursor-pointer hover:text-[#0EE6B7]"
+                  />
+                </a>
                 {/* <FiIcons.FiExternalLink size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
               </div>
             </div>
           </div>
         </div>
+
+        {/* Button list all projek in github */}
         <div className="flex flex-col items-center mt-20">
           <button className="border border-[#0EE6B7] rounded px-8 py-2 mb-3 hover:bg-[#0EE6B7] hover:text-[#131A35]">
             <a href="https://github.com/MuhNurAqsalAminullah" target={"_blank"}>
