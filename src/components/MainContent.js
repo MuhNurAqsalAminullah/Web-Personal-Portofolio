@@ -122,8 +122,6 @@ const MainContent = ({ t }) => {
                       JavaScript
                     </a>
                   </li>
-                </ul>
-                <ul>
                   <li className="flex items-center gap-x-3 mb-3">
                     <VscIcons.VscTriangleRight color="#0EE6B7" />
                     <a
@@ -132,6 +130,18 @@ const MainContent = ({ t }) => {
                       className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
                     >
                       ReactJs
+                    </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li className="flex items-center gap-x-3 mb-3">
+                    <VscIcons.VscTriangleRight color="#0EE6B7" />
+                    <a
+                      href="https://redux-toolkit.js.org/"
+                      target={"_blank"}
+                      className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                    >
+                      Redux Toolkit
                     </a>
                   </li>
                   <li className="flex items-center gap-x-3 mb-3">
@@ -154,8 +164,6 @@ const MainContent = ({ t }) => {
                       Bootstrap
                     </a>
                   </li>
-                </ul>
-                <ul>
                   <li className="flex items-center gap-x-3 mb-3">
                     <VscIcons.VscTriangleRight color="#0EE6B7" />
                     <a
@@ -163,7 +171,29 @@ const MainContent = ({ t }) => {
                       target={"_blank"}
                       className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
                     >
-                      API
+                      Restfull API
+                    </a>
+                  </li>
+                </ul>
+                <ul>
+                  <li className="flex items-center gap-x-3 mb-3">
+                    <VscIcons.VscTriangleRight color="#0EE6B7" />
+                    <a
+                      href="https://github.com/"
+                      target={"_blank"}
+                      className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                    >
+                      Git, Github
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-x-3 mb-3">
+                    <VscIcons.VscTriangleRight color="#0EE6B7" />
+                    <a
+                      href="https://www.postman.com/"
+                      target={"_blank"}
+                      className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                    >
+                      Postman
                     </a>
                   </li>
                 </ul>
@@ -526,7 +556,7 @@ const MainContent = ({ t }) => {
               <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
                 {t("Project.4_2")}
               </p>
-              <ul className="flex gap-x-3 sm:mb-2 lg:justify-end">
+              <ul className="flex gap-x-3 sm:mb-2 flex-wrap">
                 <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="href='https://reactjs.org/" target={"_blank"}>
                     ReactJs
@@ -542,14 +572,45 @@ const MainContent = ({ t }) => {
                     Tailwind
                   </a>
                 </li>
+                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a href="https://expressjs.com/" target={"_blank"}>
+                    ExpressJs
+                  </a>
+                </li>
+                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a href="https://sequelize.org/" target={"_blank"}>
+                    Sequelize
+                  </a>
+                </li>
               </ul>
               <div className="sm:flex lg:hidden md:justify-end gap-x-3">
                 <a
                   href="https://github.com/MuhNurAqsalAminullah/Warehousing-Dashboard"
                   target={"_blank"}
+                  className="flex gap-x-1 cursor-pointer hover:text-[#0EE6B7] sm:text-xs"
                 >
-                  {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
-                  <VscIcons.VscGithub />
+                  [
+                  <p>
+                    FE
+                  </p>
+                  <VscIcons.VscGithub
+                    size={18}
+                  />
+                  ]
+                </a>
+                <a
+                  href="https://github.com/MuhNurAqsalAminullah/Backend-Warehousing-Dashboard"
+                  target={"_blank"}
+                  className="flex gap-x-1 cursor-pointer hover:text-[#0EE6B7] sm:text-xs"
+                >
+                  [
+                  <p>
+                    BE
+                  </p>
+                  <VscIcons.VscGithub
+                    size={18}
+                  />
+                  ]
                 </a>
               </div>
               <div className="sm:hidden lg:flex md:justify-end gap-x-3">
@@ -696,7 +757,7 @@ const MainContent = ({ t }) => {
               {t("Project.4")}
             </a>
           </button>
-          <div className="flex items-center gap-x-2 text-[#A8A8A8]">
+          <div className="flex items-center sm:flex-col md:flex-row gap-2 text-[#A8A8A8]">
             <p className="text-center">{t("Project.5")} </p>
             <VscIcons.VscGithub
               size={25}
