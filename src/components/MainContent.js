@@ -36,25 +36,25 @@ const MainContent = ({ t }) => {
   };
 
   return (
-    <main className="sm:pt-24 md:pt-28">
+    <main className="sm:pt-32 md:pt-36 lg:pt-28">
       <div className="sm:px-5 sm:pb-28 md:px-[100px] lg:px-[200px]">
         <h5 className='sm:text-sm  sm:mb-5 md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
           {t("Hello.1")}
         </h5>
-        <h1 className='sm:text-2xl sm:mb-5 md:text-4xl lg:text-6xl text-[#CED8FF] font-bold font-["Roboto Condensed"]'>
+        <h1 className='sm:text-3xl sm:mb-5 md:text-5xl lg:text-6xl text-[#CED8FF] font-bold font-["Roboto Condensed"]'>
           Muh Nur Aqsal Aminullah
         </h1>
-        <h1 className='sm:text-2xl sm:mb-5 md:text-4xl lg:text-6xl text-[#AEAEAE] font-bold font-["Roboto Condensed"]'>
+        <h1 className='sm:text-3xl sm:mb-5 md:text-5xl lg:text-6xl text-[#AEAEAE] font-bold font-["Roboto Condensed"]'>
           {t("Hello.2")}
         </h1>
-        <p className="sm:text-xs sm:mb-5 md:text-sm lg:text-base md:w-[80%] lg:w-[50%] text-[#A8A8A8]">
+        <p className="sm:text-sm sm:mb-5 md:text-base md:w-[80%] lg:w-[50%] text-[#A8A8A8]">
           {t("Hello.3")}
         </p>
         <a
           href="CV Muh Nur Aqsal Aminullah.pdf"
           download={"CV Muh Nur Aqsal Aminullah.pdf"}
         >
-          <button className="sm:text-xs sm:mt-5 sm:px-4 sm:py-2 md:text-sm lg:text-base rounded text-[#0EE6B7] border border-[#0EE6B7]">
+          <button className="sm:text-sm sm:mt-5 sm:px-4 sm:py-2 lg:text-base rounded text-[#0EE6B7] border border-[#0EE6B7]">
             {t("Hello.4")}
           </button>
         </a>
@@ -83,63 +83,123 @@ const MainContent = ({ t }) => {
               </div>
             </div>
             <div className="sm:mt-5 lg:w-[70%] lg:mt-0 lg:pr-14">
-              <p className="sm:text-xs md:text-sm lg:text-base text-[#A8A8A8]">
+              <p className="sm:text-sm md:text-base text-[#A8A8A8]">
                 {t("About.2")}
               </p>
               <br />
-              <p className="sm:text-xs md:text-sm lg:text-base text-[#A8A8A8]">
+              <p className="sm:text-sm md:text-base text-[#A8A8A8]">
                 {t("About.3")}
               </p>
-              <div className="sm:flex sm:gap-x-10 sm:mt-3">
-                <ul>
-                  <li className="flex items-center gap-x-3 mb-3">
-                    <VscIcons.VscTriangleRight color="#0EE6B7" />
-                    <a
-                      href="https://www.w3schools.com/html/"
-                      target={"_blank"}
-                      className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
-                    >
-                      Html
-                    </a>
-                  </li>
-                  <li className="flex items-center gap-x-3 mb-3">
-                    <VscIcons.VscTriangleRight color="#0EE6B7" />
-                    <a
-                      href="https://www.w3schools.com/css/"
-                      target={"_blank"}
-                      className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
-                    >
-                      Css
-                    </a>
-                  </li>
-                  <li className="flex items-center gap-x-3 mb-3">
-                    <VscIcons.VscTriangleRight color="#0EE6B7" />
-                    <a
-                      href="https://www.w3schools.com/js/"
-                      target={"_blank"}
-                      className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
-                    >
-                      JavaScript
-                    </a>
-                  </li>
-                  <li className="flex items-center gap-x-3 mb-3">
-                    <VscIcons.VscTriangleRight color="#0EE6B7" />
-                    <a
-                      href="https://reactjs.org/"
-                      target={"_blank"}
-                      className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
-                    >
-                      ReactJs
-                    </a>
-                  </li>
-                </ul>
-                <ul>
+              {/* <div className="sm:flex sm:gap-x-10 sm:mt-3"> */}
+              <ul className="sm:grid sm:grid-cols-2 md:grid-cols-3 sm:mt-3">
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://www.w3schools.com/html/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    Html
+                  </a>
+                </li>
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://www.w3schools.com/css/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    Css
+                  </a>
+                </li>
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://www.w3schools.com/js/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    JavaScript
+                  </a>
+                </li>
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://reactjs.org/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    ReactJs
+                  </a>
+                </li>
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://redux-toolkit.js.org/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    Redux Toolkit
+                  </a>
+                </li>
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://tailwindcss.com/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    Tailwindcss
+                  </a>
+                </li>
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://getbootstrap.com/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    Bootstrap
+                  </a>
+                </li>
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://www.niagahoster.co.id/blog/api-adalah/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    Restfull API
+                  </a>
+                </li>
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://github.com/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    Git, Github
+                  </a>
+                </li>
+                <li className="flex items-center gap-x-3 mb-3">
+                  <VscIcons.VscTriangleRight color="#0EE6B7" />
+                  <a
+                    href="https://www.postman.com/"
+                    target={"_blank"}
+                    className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                  >
+                    Postman
+                  </a>
+                </li>
+              </ul>
+              {/* <ul>
                   <li className="flex items-center gap-x-3 mb-3">
                     <VscIcons.VscTriangleRight color="#0EE6B7" />
                     <a
                       href="https://redux-toolkit.js.org/"
                       target={"_blank"}
-                      className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
+                      className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'
                     >
                       Redux Toolkit
                     </a>
@@ -196,8 +256,8 @@ const MainContent = ({ t }) => {
                       Postman
                     </a>
                   </li>
-                </ul>
-              </div>
+                </ul> */}
+              {/* </div> */}
             </div>
           </div>
         </div>
@@ -260,27 +320,27 @@ const MainContent = ({ t }) => {
               /> */}
             </div>
             <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-end z-10">
-              <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
+              <h5 className='sm:text-base md:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.1_1")}
               </h5>
               <h4 className="sm:text-lg sm:mb-1 md:text-xl lg:text-2xl text-[#CED8FF] font-bold">
                 Berich Premium
               </h4>
-              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
+              <p className="sm:text-sm md:text-base sm:mb-2 lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
                 {t("Project.1_2")}
               </p>
               <ul className="flex gap-x-3 sm:mb-2 lg:justify-end">
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://reactjs.org/" target={"_blank"}>
                     ReactJs
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://tailwindcss.com/" target={"_blank"}>
                     Tailwind
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://mui.com/core/" target={"_blank"}>
                     MUI/Core
                   </a>
@@ -288,7 +348,8 @@ const MainContent = ({ t }) => {
               </ul>
               <div className="sm:flex lg:hidden md:justify-end gap-x-3">
                 {/* <VscIcons.VscGithub /> */}
-                <a href="https://berichpremium.com/" target={"_blank"}>
+                <a href="https://berichpremium.com/"
+                  size={20} target={"_blank"}>
                   {/* <FiIcons.FiExternalLink size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
                   <FiIcons.FiExternalLink />
                 </a>
@@ -346,22 +407,22 @@ const MainContent = ({ t }) => {
             </div>
 
             <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-start z-10">
-              <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
+              <h5 className='sm:text-base md:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.2_1")}
               </h5>
               <h4 className="sm:text-lg sm:mb-1 md:text-xl lg:text-2xl text-[#CED8FF] font-bold">
                 Zona English
               </h4>
-              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
+              <p className="sm:text-sm md:text-base sm:mb-2 lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
                 {t("Project.2_2")}
               </p>
               <ul className="flex gap-x-3 sm:mb-2 lg:justify-end">
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="href='https://reactjs.org/" target={"_blank"}>
                     ReactJs
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://www.w3schools.com/css/" target={"_blank"}>
                     Css
                   </a>
@@ -373,10 +434,12 @@ const MainContent = ({ t }) => {
                   target={"_blank"}
                 >
                   {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
-                  <VscIcons.VscGithub />
+                  <VscIcons.VscGithub
+                    size={20}
+                  />
                 </a>
                 <a href="https://www.zonaenglish.id/" target={"_blank"}>
-                  <FiIcons.FiExternalLink />
+                  <FiIcons.FiExternalLink size={20} />
                   {/* <FiIcons.FiExternalLink size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
                 </a>
               </div>
@@ -434,27 +497,27 @@ const MainContent = ({ t }) => {
             </div>
 
             <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-end z-10">
-              <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
+              <h5 className='sm:text-base md:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.3_1")}
               </h5>
               <h4 className="sm:text-lg sm:mb-1 md:text-xl lg:text-2xl text-[#CED8FF] font-bold">
                 Notes App CRUD Integrate API
               </h4>
-              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
+              <p className="sm:text-sm md:text-base sm:mb-2 lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
                 {t("Project.3_2")}
               </p>
               <ul className="flex gap-x-3 sm:mb-2 lg:justify-end">
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://reactjs.org/" target={"_blank"}>
                     ReactJs
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://redux-toolkit.js.org/" target={"_blank"}>
                     Redux Toolkit
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a
                     href="https://www.dewaweb.com/blog/apa-itu-crud/"
                     target={"_blank"}
@@ -462,12 +525,12 @@ const MainContent = ({ t }) => {
                     CRUD
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a
-                    href="https://www.niagahoster.co.id/blog/api-adalah/"
+                    href="https://supabase.com/"
                     target={"_blank"}
                   >
-                    API
+                    Supabase
                   </a>
                 </li>
               </ul>
@@ -477,13 +540,14 @@ const MainContent = ({ t }) => {
                   target={"_blank"}
                 >
                   {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
-                  <VscIcons.VscGithub />
+                  <VscIcons.VscGithub size={20} />
                 </a>
                 <a
-                  href="https://notes-app-steel-alpha.vercel.app/"
+                  href="https://app-note-prod.netlify.app/"
                   target={"_blank"}
                 >
                   <FiIcons.FiExternalLink
+                    size={20}
                     className="cursor-pointer hover:text-[#0EE6B7]"
                   />
                 </a>
@@ -500,7 +564,7 @@ const MainContent = ({ t }) => {
                   />
                 </a>
                 <a
-                  href="https://notes-app-steel-alpha.vercel.app/"
+                  href="https://app-note-prod.netlify.app/"
                   target={"_blank"}
                 >
                   <FiIcons.FiExternalLink
@@ -547,37 +611,37 @@ const MainContent = ({ t }) => {
             </div>
 
             <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-start z-10">
-              <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
+              <h5 className='sm:text-base md:textlg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.4_1")}
               </h5>
               <h4 className="sm:text-lg sm:mb-1 md:text-xl lg:text-2xl text-[#CED8FF] font-bold">
                 Warehousing Dashboard
               </h4>
-              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
+              <p className="sm:text-sm md:text-base sm:mb-2 lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
                 {t("Project.4_2")}
               </p>
-              <ul className="flex gap-x-3 sm:mb-2 flex-wrap">
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+              <ul className="flex gap-x-3 gap-y-2 sm:mb-2 flex-wrap">
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="href='https://reactjs.org/" target={"_blank"}>
                     ReactJs
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://redux-toolkit.js.org/" target={"_blank"}>
                     Redux Toolkit
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://tailwindcss.com/" target={"_blank"}>
                     Tailwind
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://expressjs.com/" target={"_blank"}>
                     ExpressJs
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://sequelize.org/" target={"_blank"}>
                     Sequelize
                   </a>
@@ -587,28 +651,28 @@ const MainContent = ({ t }) => {
                 <a
                   href="https://github.com/MuhNurAqsalAminullah/Warehousing-Dashboard"
                   target={"_blank"}
-                  className="flex gap-x-1 cursor-pointer hover:text-[#0EE6B7] sm:text-xs"
+                  className="flex gap-x-1 cursor-pointer hover:text-[#0EE6B7] sm:text-sm"
                 >
                   [
                   <p>
                     FE
                   </p>
                   <VscIcons.VscGithub
-                    size={18}
+                    size={20}
                   />
                   ]
                 </a>
                 <a
                   href="https://github.com/MuhNurAqsalAminullah/Backend-Warehousing-Dashboard"
                   target={"_blank"}
-                  className="flex gap-x-1 cursor-pointer hover:text-[#0EE6B7] sm:text-xs"
+                  className="flex gap-x-1 cursor-pointer hover:text-[#0EE6B7] sm:text-sm"
                 >
                   [
                   <p>
                     BE
                   </p>
                   <VscIcons.VscGithub
-                    size={18}
+                    size={20}
                   />
                   ]
                 </a>
@@ -673,32 +737,32 @@ const MainContent = ({ t }) => {
             </div>
 
             <div className="sm:mt-2 lg:mt-0 lg:w-[40%] lg:flex lg:flex-col lg:justify-center lg:items-end z-10">
-              <h5 className='sm:text-sm md:text-base lg:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
+              <h5 className='sm:text-base md:text-lg text-[#0EE6B7] font-["Inconsolata"]'>
                 {t("Project.5_1")}
               </h5>
               <h4 className="sm:text-lg sm:mb-1 md:text-xl lg:text-2xl lg:text-end text-[#CED8FF] font-bold">
                 Final Submission Dicoding Frontend Expert
               </h4>
-              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
+              <p className="sm:text-sm md:text-base sm:mb-2 lg:bg-[#141C3D] lg:relative lg:w-[500px] lg:p-3 lg:rounded lg:shadow-lg lg:shadow-black text-[#A8A8A8]">
                 {t("Project.5_2")}
               </p>
               <ul className="flex gap-x-3 sm:mb-2 lg:justify-end">
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://www.javascript.com/" target={"_blank"}>
                     Javascript
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://www.w3schools.com/css/" target={"_blank"}>
                     Css
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://webpack.js.org/" target={"_blank"}>
                     Webpack
                   </a>
                 </li>
-                <li className='sm:text-xs md:text-sm lg:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a
                     href="https://www.niagahoster.co.id/blog/api-adalah/"
                     target={"_blank"}
@@ -713,13 +777,14 @@ const MainContent = ({ t }) => {
                   target={"_blank"}
                 >
                   {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
-                  <VscIcons.VscGithub />
+                  <VscIcons.VscGithub size={20} />
                 </a>
                 <a
                   href="https://restonyam.netlify.app/"
                   target={"_blank"}
                 >
                   <FiIcons.FiExternalLink
+                    size={20}
                     className="cursor-pointer hover:text-[#0EE6B7]"
                   />
                 </a>
@@ -781,11 +846,11 @@ const MainContent = ({ t }) => {
         <div className="mt-10">
           <div className="lg:flex">
             <div className="lg:w-1/2">
-              <p className="sm:text-xs sm:mb-5 md:text-sm lg:text-base lg:pr-3 text-[#A8A8A8]">
+              <p className="sm:mb-5 sm:text-sm md:text-base lg:pr-3 text-[#A8A8A8]">
                 {t("Contact.2")} <br />
                 <br /> {t("Contact.3")}
               </p>
-              <p className="sm:text-xs sm:mb-2 md:text-sm lg:text-base lg:pr-3 text-[#0EE6B7]">
+              <p className="sm:mb-2 sm:text-sm md:text-base lg:pr-3 text-[#0EE6B7]">
                 Gmail : muhnuraqsalaminullah@gmail.com
               </p>
               <div className="flex gap-x-3">
@@ -832,13 +897,13 @@ const MainContent = ({ t }) => {
                 name="to_name"
                 type="text"
                 placeholder={t("Contact.4")}
-                className="sm:text-xs sm:mb-2 md:text-sm lg:text-base rounded pl-2 py-2 bg-black/[.3] outline-none"
+                className="sm:mb-2 sm:text-sm md:text-base rounded pl-2 py-2 bg-black/[.3] outline-none"
               />
               <input
                 name="reply_to"
                 type="text"
                 placeholder={t("Contact.5")}
-                className="sm:text-xs sm:mb-2 md:text-sm lg:text-base rounded pl-2 py-2 bg-black/[.3] outline-none"
+                className="sm:mb-2 sm:text-sm md:text-base rounded pl-2 py-2 bg-black/[.3] outline-none"
               />
               <textarea
                 name="message"
@@ -846,13 +911,13 @@ const MainContent = ({ t }) => {
                 cols="30"
                 rows="10"
                 placeholder={t("Contact.6")}
-                className="sm:text-xs md:text-sm lg:text-base bg-black/[.3] outline-none pl-2 py-3"
+                className="sm:text-sm md:text-base bg-black/[.3] outline-none pl-2 py-3"
               ></textarea>
               <div className="flex justify-end">
                 <button
                   type="submit"
                   value="Send"
-                  className="sm:text-xs sm:mt-5 sm:px-10 sm:py-2 md:text-sm lg:text-base rounded text-[#0EE6B7] border border-[#0EE6B7]"
+                  className="sm:mt-5 sm:px-10 sm:py-2 sm:text-sm md:text-base rounded text-[#0EE6B7] border border-[#0EE6B7]"
                 >
                   {t("Contact.7")}
                 </button>
