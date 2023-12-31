@@ -31,7 +31,7 @@ const Navbar = ({ t, clickLanguage }) => {
       <div className="sm:flex sm:items-center sm:justify-between sm:px-5 sm:py-4 sm:text-white md:px-[50px] lg:[100px]">
         <div>
           <a href="#">
-            <h3 className="sm:text-2xl sm:font-semibold lg:text-3xl tracking-widest">
+            <h3 className="sm:text-3xl sm:font-semibold lg:text-3xl tracking-widest">
               {t("Header.1")}
             </h3>
           </a>
@@ -40,8 +40,8 @@ const Navbar = ({ t, clickLanguage }) => {
         <div
           className={
             burger
-              ? "sm:bg-[#141C3D]/[.2] sm:absolute sm:right-0 sm:top-0 sm:w-[100%] sm:h-screen sm:flex sm:flex-col sm:justify-evenly sm:items-center sm:translate-x-0 sm:ease-in sm:duration-100"
-              : "sm:bg-[#141C3D]/[.0] sm:absolute sm:right-0 sm:top-0 sm:w-[100%] sm:h-screen sm:flex sm:flex-col sm:justify-evenly sm:items-center sm:translate-x-full sm:ease-in sm:duration-100 md:translate-x-0 md:relative md:flex-row md:h-fit md:bg-transparent md:w-fit md:gap-10 lg:gap-20"
+              ? "sm:bg-[#141C3D]/[.2] backdrop-blur-sm sm:absolute sm:right-0 sm:top-0 sm:w-[100%] sm:h-screen sm:flex sm:flex-col sm:justify-evenly sm:items-center sm:translate-x-0 sm:ease-in sm:duration-100"
+              : "sm:bg-[#141C3D]/[.0] backdrop-blur-sm sm:absolute sm:right-0 sm:top-0 sm:w-[100%] sm:h-screen sm:flex sm:flex-col sm:justify-evenly sm:items-center sm:translate-x-full sm:ease-in sm:duration-100 md:translate-x-0 md:relative md:flex-row md:h-fit md:bg-transparent md:w-fit md:gap-10 lg:gap-20"
           }
         >
           <ul
@@ -108,7 +108,7 @@ const Navbar = ({ t, clickLanguage }) => {
 
         <GiIcons.GiHamburgerMenu
           onClick={burgerToggle}
-          size={25}
+          size={30}
           className="z-10 md:hidden"
         />
       </div>

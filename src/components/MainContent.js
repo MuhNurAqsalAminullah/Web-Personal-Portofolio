@@ -44,7 +44,7 @@ const MainContent = ({ t }) => {
         <h1 className='sm:text-3xl sm:mb-5 md:text-5xl lg:text-6xl text-[#CED8FF] font-bold font-["Roboto Condensed"]'>
           Muh Nur Aqsal Aminullah
         </h1>
-        <h1 className='sm:text-3xl sm:mb-5 md:text-5xl lg:text-6xl text-[#AEAEAE] font-bold font-["Roboto Condensed"]'>
+        <h1 className='sm:text-3xl sm:mb-5 md:text-5xl lg:text-6xl text-body font-bold font-["Roboto Condensed"]'>
           {t("Hello.2")}
         </h1>
         <p className="sm:text-sm sm:mb-5 md:text-base md:w-[80%] lg:w-[50%] text-[#A8A8A8]">
@@ -346,23 +346,20 @@ const MainContent = ({ t }) => {
                   </a>
                 </li>
               </ul>
-              <div className="sm:flex lg:hidden md:justify-end gap-x-3">
-                {/* <VscIcons.VscGithub /> */}
+              {/* <div className="sm:flex lg:hidden md:justify-end gap-x-3">
                 <a href="https://berichpremium.com/"
                   size={20} target={"_blank"}>
-                  {/* <FiIcons.FiExternalLink size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
                   <FiIcons.FiExternalLink />
                 </a>
-              </div>
-              <div className="sm:hidden lg:flex md:justify-end gap-x-3">
-                {/* <VscIcons.VscGithub size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
+              </div> */}
+              {/* <div className="sm:hidden lg:flex md:justify-end gap-x-3">
                 <a href="https://berichpremium.com/" target={"_blank"}>
                   <FiIcons.FiExternalLink
                     size={25}
                     className="cursor-pointer hover:text-[#0EE6B7]"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -438,10 +435,6 @@ const MainContent = ({ t }) => {
                     size={20}
                   />
                 </a>
-                <a href="https://www.zonaenglish.id/" target={"_blank"}>
-                  <FiIcons.FiExternalLink size={20} />
-                  {/* <FiIcons.FiExternalLink size={25} className='cursor-pointer hover:text-[#0EE6B7]' /> */}
-                </a>
               </div>
               <div className="sm:hidden lg:flex md:justify-end gap-x-3">
                 <a
@@ -449,12 +442,6 @@ const MainContent = ({ t }) => {
                   target={"_blank"}
                 >
                   <VscIcons.VscGithub
-                    size={25}
-                    className="cursor-pointer hover:text-[#0EE6B7]"
-                  />
-                </a>
-                <a href="https://www.zonaenglish.id/" target={"_blank"}>
-                  <FiIcons.FiExternalLink
                     size={25}
                     className="cursor-pointer hover:text-[#0EE6B7]"
                   />
@@ -644,6 +631,11 @@ const MainContent = ({ t }) => {
                 <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
                   <a href="https://sequelize.org/" target={"_blank"}>
                     Sequelize
+                  </a>
+                </li>
+                <li className='sm:text-sm md:text-base text-[#A8A8A8] font-["Inconsolata"] hover:text-[#0EE6B7]'>
+                  <a href="https://www.mysql.com/" target={"_blank"}>
+                    Mysql
                   </a>
                 </li>
               </ul>
